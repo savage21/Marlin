@@ -33,7 +33,7 @@
 // #define V5_330_TITAN_TMC 1
 // #define V5_330_TITAN_NO_TMC 1
 // #define V5_330_NO_TITAN_TMC 1
- #define V5_330_NO_TITAN_NO_TMC 1
+ #define V5_330_NO_TITAN_NO_TMC 1                           //bearbeitet
 // #define XY3_V5_310_NO_TITAN_NO_TMC_NO_ABL 1
 
 #if V6_330_TITAN_TMC
@@ -897,7 +897,7 @@
 #elif WITH_TITAN && !WITH_TMC
   #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 420 }
 #else
-  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 415 }
+  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 415 }                //bearbeitet
 #endif
 
 // #define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 800, 420 }
@@ -909,7 +909,7 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 300, 300, 5, 25 }
+#define DEFAULT_MAX_FEEDRATE          { 300, 300, 20, 25 }                //bearbeitet
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
@@ -1142,7 +1142,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -35, -0, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -38, -0, 0 }                   //bearbeitet
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1563,8 +1563,8 @@
 #define Z_SAFE_HOMING
 
 #if ENABLED(Z_SAFE_HOMING)
-  #define Z_SAFE_HOMING_X_POINT X_CENTER  // X point for Z homing when homing all axes (G28).
-  #define Z_SAFE_HOMING_Y_POINT Y_CENTER  // Y point for Z homing when homing all axes (G28).
+  #define Z_SAFE_HOMING_X_POINT X_CENTER  // X point for Z homing when homing all axes (G28).           //bearbeitet
+  #define Z_SAFE_HOMING_Y_POINT Y_CENTER  // Y point for Z homing when homing all axes (G28).           //bearbeitet
 #endif
 
 // Homing speeds (mm/m)
