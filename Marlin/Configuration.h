@@ -131,7 +131,7 @@
   //#define WITH_TMC 1
   //#define WITH_TITAN 1
   #define X_BED_SIZE 330
-  #define Y_BED_SIZE 330
+  #define Y_BED_SIZE 312                                    //bearbeitet
   #define Z_MAX_POS 400
   #define CUSTOM_MACHINE_NAME "Tronxy X5SA V5 330"
 
@@ -1142,7 +1142,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -38, -0, 0 }                   //bearbeitet
+#define NOZZLE_TO_PROBE_OFFSET { 38, 0, 0 }                   //bearbeitet
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1295,7 +1295,7 @@
 
 // The size of the print bed
 // #define X_BED_SIZE 330
-// #define Y_BED_SIZE 330
+// #define Y_BED_SIZE 312                                                   //bearbeitet
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
@@ -1547,8 +1547,8 @@
 
 // Manually set the home position. Leave these undefined for automatic settings.
 // For DELTA this is the top-center of the Cartesian print volume.
-//#define MANUAL_X_HOME_POS 0
-#define MANUAL_Y_HOME_POS -14                     //bearbeitet
+#define MANUAL_X_HOME_POS -3
+#define MANUAL_Y_HOME_POS -18                     //bearbeitet
 //#define MANUAL_Z_HOME_POS 0
 
 // Use "Z Safe Homing" to avoid homing with a Z probe outside the bed area.
@@ -1678,13 +1678,13 @@
 
 // Preheat Constants
 #define PREHEAT_1_LABEL       "PLA"
-#define PREHEAT_1_TEMP_HOTEND 180
-#define PREHEAT_1_TEMP_BED     50
+#define PREHEAT_1_TEMP_HOTEND 210
+#define PREHEAT_1_TEMP_BED     55
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "ABS"
 #define PREHEAT_2_TEMP_HOTEND 240
-#define PREHEAT_2_TEMP_BED    90
+#define PREHEAT_2_TEMP_BED    80
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
 
 /**
